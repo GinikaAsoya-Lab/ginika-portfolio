@@ -13,6 +13,7 @@ export default function Home(): React.JSX.Element {
       <Experience />
       <About />
       <Projects />
+      <iframe src="https://www.bookclipy.com/book/D6MWXY12bqbSwDLBOdwco35VVNA2?theme=dark" width="100%" height="1000" style={{ border: "none" }}></iframe>
       <Footer />
     </main>
   );
