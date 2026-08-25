@@ -12,34 +12,35 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-  description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products that balance user needs and business goals. 3+ years of industry experience.",
+  title: "Ginikachukwu Asoya | Data Analyst & FinTech Specialist",
+  description: "Portfolio of Ginikachukwu Asoya. Showcasing data-driven decisions, operational optimization, machine learning forecasts, and financial technology architecture.",
   keywords: [
-    "Ibrahim Memon",
-    "Software Engineer",
-    "UI/UX Designer",
-    "Frontend Developer",
-    "React Developer",
-    "Next.js Developer",
-    "Web Designer",
-    "WebHR Engineer",
+    "Ginikachukwu Asoya",
+    "Ginika",
+    "Data Analyst",
+    "FinTech",
+    "Business Analytics",
+    "Python",
+    "Machine Learning",
+    "Power BI",
+    "SQL",
     "Portfolio",
   ],
-  authors: [{ name: "Ibrahim Memon" }],
-  creator: "Ibrahim Memon",
-  publisher: "Ibrahim Memon",
+  authors: [{ name: "Ginikachukwu Asoya" }],
+  creator: "Ginikachukwu Asoya",
+  publisher: "Ginikachukwu Asoya",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://ibiimemon.com",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR. Creating meaningful and delightful digital products.",
-    siteName: "Ibrahim Memon Portfolio",
+    locale: "en_GB",
+    url: "/",
+    title: "Ginikachukwu Asoya | Data Analyst & FinTech Specialist",
+    description: "Portfolio of Ginikachukwu Asoya. Showcasing data-driven decisions, operational optimization, and machine learning forecasts.",
+    siteName: "Ginikachukwu Asoya Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ibrahim Memon - Software Engineer & UI/UX Designer",
-    description: "A self-taught UI/UX designer and Software Engineer at WebHR.",
+    title: "Ginikachukwu Asoya | Data Analyst & FinTech Specialist",
+    description: "Portfolio of Ginikachukwu Asoya. Showcasing data-driven decisions and operational optimization.",
   },
   robots: {
     index: true,
@@ -66,10 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="canonical" href="https://ibiimemon.com" />
-      </head>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${poppins.variable} font-sans antialiased`}
       >
