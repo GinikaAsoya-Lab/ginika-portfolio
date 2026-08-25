@@ -10,13 +10,13 @@ interface Project {
 }
 
 const featuredProjects: Project[] = [
-  {
+ {
     id: 1,
     title: "Staffing Demand ML Forecast",
     description: "Engineered a Random Forest Regressor machine learning model to replace human estimation with precise payroll allocation. Reduced the Mean Absolute Error (MAE) of staffing predictions from a baseline of 20.89 down to just 2.59 staff members per event.",
     techStack: "Python • Pandas • Scikit-Learn • Machine Learning",
     image: "/projects/project-1.png",
-    link: "#", // Placeholder link
+    link: "https://github.com/GinikaAsoya-Lab/staffing-demand-ml", 
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const featuredProjects: Project[] = [
     description: "Developed a comprehensive Power BI business intelligence dashboard tracking inventory flows and shrinkage. Engineered the underlying architecture with a custom Python script and an SQLite database to simulate and manage complex operational data.",
     techStack: "Power BI • Python • SQLite • DAX",
     image: "/projects/project-2.png",
-    link: "#", // Placeholder link
+    link: "https://github.com/GinikaAsoya-Lab/Stock-Variance-Data-Pipeline", 
   },
   {
     id: 3,
