@@ -32,22 +32,14 @@ const featuredProjects: Project[] = [
     description: "Built a digital feedback and issue resolution pipeline utilizing Microsoft Forms branching logic and Power Automate to optimize internal field staff communications and streamline daily operational reporting.",
     techStack: "Excel • Power Automate • Microsoft Forms",
     image: "/projects/project-3.png",
-    link: "", // Left blank so the button hides until you have a repo
+    link: "", // Left blank until repository is published
   },
   {
     id: 4,
-    title: "sims4mgr – Python Application",
-    description: "Developed a modular Python application featuring a CLI and web components to systematically manage, verify, and automate the tracking of local directories and digital assets.",
-    techStack: "Python • Modular Design • CLI • Asset Management",
-    image: "/projects/project-4.png",
-    link: "", 
-  },
-  {
-    id: 5,
     title: "Race-Day Performance & Forecasting Engine",
     description: "Built a fully automated Excel forecasting workbook tracking staffing assignments, real-time sales milestones, and inventory consumption across 15 concurrent events. Designed centralized, dynamic dashboards that aggregate forecast variances and map operational data across multiple vendor platforms.",
     techStack: "Advanced Excel • Financial Forecasting • Dynamic Dashboards • Data Mapping",
-    link: "", 
+    link: "", // Left blank until repository is published
   }
 ];
 
