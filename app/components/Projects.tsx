@@ -10,10 +10,10 @@ interface Project {
 }
 
 const featuredProjects: Project[] = [
- {
+  {
     id: 1,
     title: "Staffing Demand ML Forecast",
-    description: "Engineered a Random Forest Regressor machine learning model to replace human estimation with precise payroll allocation. Reduced the Mean Absolute Error (MAE) of staffing predictions from a baseline of 20.89 down to just 2.59 staff members per event.",
+    description: "Built a Random Forest Regressor machine learning model to replace human estimation with precise payroll allocation. Engineered strictly on leading indicators to prevent target leakage, the model successfully reduced the Mean Absolute Error (MAE) of staffing predictions from a baseline of 23.21 down to 20.08 staff members per event.",
     techStack: "Python • Pandas • Scikit-Learn • Machine Learning",
     image: "/projects/project-1.png",
     link: "https://github.com/GinikaAsoya-Lab/staffing-demand-ml", 
@@ -21,7 +21,7 @@ const featuredProjects: Project[] = [
   {
     id: 2,
     title: "Stock Variance & Data Pipeline",
-    description: "Developed a comprehensive Power BI business intelligence dashboard tracking inventory flows and shrinkage. Engineered the underlying architecture with a custom Python script and an SQLite database to simulate and manage complex operational data.",
+    description: "Developed a comprehensive Power BI business intelligence dashboard tracking inventory flows and shrinkage. Engineered the underlying data pipeline with a custom Python script and an SQLite database to simulate and manage complex operational data.",
     techStack: "Power BI • Python • SQLite • DAX",
     image: "/projects/project-2.png",
     link: "https://github.com/GinikaAsoya-Lab/Stock-Variance-Data-Pipeline", 
@@ -29,25 +29,25 @@ const featuredProjects: Project[] = [
   {
     id: 3,
     title: "Automated EPOS Resolution Engine",
-    description: "Built a digital feedback and issue resolution pipeline utilizing Microsoft Forms branching logic and Power Automate to optimize cash office communications and streamline daily operational reporting alongside Kappture systems.",
+    description: "Built a digital feedback and issue resolution pipeline utilizing Microsoft Forms branching logic and Power Automate to optimize internal field staff communications and streamline daily operational reporting.",
     techStack: "Excel • Power Automate • Microsoft Forms",
     image: "/projects/project-3.png",
-    link: "#", // Placeholder link
+    link: "", // Left blank so the button hides until you have a repo
   },
   {
     id: 4,
     title: "sims4mgr – Python Application",
-    description: "Developed a full-scale Python application with a robust modular architecture, featuring a CLI and web components. Engineered to systematically manage, verify, and automate the tracking of large-scale digital assets and directory paths.",
-    techStack: "Python • Application Architecture • CLI • Asset Management",
+    description: "Developed a modular Python application featuring a CLI and web components to systematically manage, verify, and automate the tracking of local directories and digital assets.",
+    techStack: "Python • Modular Design • CLI • Asset Management",
     image: "/projects/project-4.png",
-    link: "#", // Placeholder link
+    link: "", 
   },
   {
     id: 5,
     title: "Race-Day Performance & Forecasting Engine",
-    description: "Single-handedly engineered a fully automated Excel architecture tracking staffing assignments, real-time sales milestones, and inventory consumption across 15 concurrent race-day events. Built centralized, dynamic dashboards that aggregate forecast variances and seamlessly map data between Kappture EPOS and Trails systems without requiring manual formula adjustments.",
-    techStack: "Advanced Excel • Financial Forecasting • Dynamic Dashboards • System Mapping",
-    link: "#", // Placeholder link
+    description: "Built a fully automated Excel forecasting workbook tracking staffing assignments, real-time sales milestones, and inventory consumption across 15 concurrent events. Designed centralized, dynamic dashboards that aggregate forecast variances and map operational data across multiple vendor platforms.",
+    techStack: "Advanced Excel • Financial Forecasting • Dynamic Dashboards • Data Mapping",
+    link: "", 
   }
 ];
 
@@ -86,8 +86,8 @@ export default function Projects(): React.JSX.Element {
                     </div>
                   </div>
 
-                  {/* View Code Button */}
-                  {project.link && (
+                  {/* View Code Button - ONLY renders if a real link exists */}
+                  {project.link && project.link !== "#" && project.link !== "" && (
                     <div className="relative z-10">
                       <a 
                         href={project.link}
@@ -98,7 +98,7 @@ export default function Projects(): React.JSX.Element {
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
                         </svg>
-                        View Source Architecture
+                        View Source Code
                       </a>
                     </div>
                   )}
