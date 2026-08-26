@@ -32,14 +32,14 @@ const featuredProjects: Project[] = [
     description: "Built a digital feedback and issue resolution pipeline utilizing Microsoft Forms branching logic and Power Automate to optimize internal field staff communications and streamline daily operational reporting.",
     techStack: "Excel • Power Automate • Microsoft Forms",
     image: "/projects/project-3.png",
-    link: "", // Left blank until repository is published
+    link: "", 
   },
   {
     id: 4,
     title: "Race-Day Performance & Forecasting Engine",
     description: "Built a fully automated Excel forecasting workbook tracking staffing assignments, real-time sales milestones, and inventory consumption across 15 concurrent events. Designed centralized, dynamic dashboards that aggregate forecast variances and map operational data across multiple vendor platforms.",
     techStack: "Advanced Excel • Financial Forecasting • Dynamic Dashboards • Data Mapping",
-    link: "", // Left blank until repository is published
+    link: "", 
   }
 ];
 
@@ -78,9 +78,9 @@ export default function Projects(): React.JSX.Element {
                     </div>
                   </div>
 
-                  {/* View Code Button - ONLY renders if a real link exists */}
-                  {project.link && project.link !== "#" && project.link !== "" && (
-                    <div className="relative z-10">
+                  {/* View Code Button OR Confidential Badge */}
+                  <div className="relative z-10">
+                    {project.link && project.link !== "#" && project.link !== "" ? (
                       <a 
                         href={project.link}
                         target="_blank"
@@ -92,8 +92,15 @@ export default function Projects(): React.JSX.Element {
                         </svg>
                         View Source Code
                       </a>
-                    </div>
-                  )}
+                    ) : (
+                      <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/5 border border-white/10 rounded-full text-white/50 text-sm font-medium backdrop-blur-md cursor-not-allowed">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 256 256">
+                          <path d="M208,88H176V56a48,48,0,0,0-96,0V88H48a16,16,0,0,0-16,16V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V104A16,16,0,0,0,208,88Zm-80,72a12,12,0,1,1,12-12A12,12,0,0,1,128,160Zm32-72H96V56a32,32,0,0,1,64,0Z"></path>
+                        </svg>
+                        Internal architecture — source code confidential
+                      </span>
+                    )}
+                  </div>
 
                 </div>
 
